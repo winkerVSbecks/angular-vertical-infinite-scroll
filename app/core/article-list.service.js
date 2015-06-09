@@ -19,7 +19,7 @@ angular.module('verticalScrollingTest.articleList', [])
   };
 
   service.register = function(height) {
-    service.posMark += 0.75 * height;
+    service.posMark += 0.5 * height;
     $log.log('☞ Next marker at', service.posMark);
     service.didRenderArticle = false;
   };
@@ -28,6 +28,10 @@ angular.module('verticalScrollingTest.articleList', [])
     if (position >= service.posMark && !service.didRenderArticle) {
       renderArticle();
     }
+  }
+
+  function randomNumber(minimum, maximum) {
+    return Math.round(Math.random() * (maximum - minimum) + minimum);
   }
 
   function renderArticle() {
@@ -41,6 +45,7 @@ angular.module('verticalScrollingTest.articleList', [])
     ];
 
     scope.type = types[Math.floor(Math.random() * types.length)];
+    scope.paragraphs = new Array(randomNumber(1, 5));
     service.didRenderArticle = true;
     service.articleCount++;
     container.append($compile(articleTempl)(scope));
