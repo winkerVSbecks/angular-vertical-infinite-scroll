@@ -1,0 +1,86 @@
+/**
+ * Colours
+ * grey      : #EDEDF0;
+ * dark-grey : #D7D7E0;
+ * blue      : #B0D9EC;
+ * yellow    : #EDDFBF;
+ * green     : #CDE4C6;
+ * red       : #E9A7AA;
+ * purple    : #7878A2;
+ */
+
+@font-face {
+  font-family: 'BLOKK';
+  src: url('../assets/BLOKKRegular.eot');
+  src: url('../assets/BLOKKRegular.eot?#iefix') format('embedded-opentype'),
+       url('../assets/BLOKKRegular.woff') format('woff'),
+       url('../assets/BLOKKRegular.svg#BLOKKRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/**
+ * Navbar
+ */
+nav {
+  background-color: #EDEDF0;
+  color: #B8B8CA;
+  height: 8rem;
+  left: 0;
+  padding: 0 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav h1 {
+  letter-spacing: 0.1rem;
+  line-height: 8rem;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: clip;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/**
+ * Main
+ */
+main {
+  margin-top: 8rem;
+  width: 100%;
+}
+
+article {
+  border-bottom: 2px solid #EDDFBF;
+  color: #fff;
+  font-family: 'BLOKK', sans-serif;
+  font-size: 1.5rem;
+  min-height: 150vh;
+  padding: 2rem;
+}
+
+article p {
+  word-break: break-all;
+}
+
+.blue {
+  background-color: #B0D9EC;
+}
+.yellow {
+  background-color: #EDDFBF;
+}
+.green {
+  background-color: #CDE4C6;
+}
+.red {
+  background-color: #E9A7AA;
+}
+.purple {
+  background-color: #7878A2;
+}
+.dark-grey {
+  background-color: #D7D7E0;
+}

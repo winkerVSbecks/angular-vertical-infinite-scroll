@@ -1,0 +1,21 @@
+{
+  "name": "vertical-scrolling",
+  "version": "0.0.0",
+  "authors": [
+    "Varun Vachhar <varunvachhar@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-animate": "~1.4.0",
+    "skeletor": "git@github.com:rangle/skeletor.git",
+    "scrollMonitor": "~1.0.12"
+  }
+}
